@@ -5,10 +5,20 @@
 //   }, "");
 // };
 
+// const titleCase = (str = "") => {
+//   const words = [];
+//   for (const word of str.split(" "))
+//     words.push(word[0].toUpperCase() + word.slice(1));
+
+//   return words.join(" ");
+// };
+
 const titleCase = (str = "") => {
   const words = [];
-  for (const word of str.split(" "))
-    words.push(word[0].toUpperCase() + word.slice(1));
+
+  str
+    .split(" ")
+    .forEach((word) => words.push(word[0].toUpperCase() + word.slice(1)));
 
   return words.join(" ");
 };
