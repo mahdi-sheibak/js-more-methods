@@ -98,6 +98,16 @@ class LinkedList {
     const node = new ListNode(value, previous.next);
     previous.next = node;
   }
+
+  forEach(fn) {
+    let node = this.head;
+    let counter = 1;
+    while (node) {
+      fn(node, counter);
+      node = node.next;
+      counter++;
+    }
+  }
 }
 
 const node1 = new ListNode(1);
@@ -106,6 +116,10 @@ const node2 = new ListNode(2);
 node1.next = node2;
 
 const list = new LinkedList(node1);
+
+list.forEach((value, n) => {
+  console.log("Value::", value, "-", "n::", n);
+});
 
 console.log(list); // { head: { value: 1, next: { value: 2, next: null } } }
 console.log(list.size()); // 2

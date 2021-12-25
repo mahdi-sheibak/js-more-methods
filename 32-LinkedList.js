@@ -84,6 +84,16 @@ class LinkedList {
     const node = new ListNode(value, previous.next);
     previous.next = node;
   }
+
+  forEach(fn) {
+    let node = this.head;
+    let counter = 1;
+    while (node) {
+      fn(node, counter);
+      node = node.next;
+      counter++;
+    }
+  }
 }
 
 const node1 = new ListNode(1);
