@@ -1,6 +1,6 @@
 // https://www.30secondsofcode.org/js/s/heapsort
 
-const heapsort = (arr) => {
+const heapSort = (arr) => {
   const a = [...arr];
   let l = a.length;
 
@@ -25,4 +25,4 @@ const heapsort = (arr) => {
   return a;
 };
 
-console.log(heapsort([6, 3, 4, 1])); // [1, 3, 4, 6]
+console.log(heapSort([6, 3, 4, 1])); // [1, 3, 4, 6]
