@@ -1,3 +1,5 @@
+// https://www.30secondsofcode.org/js/s/binary-search
+
 const binarySearch = (arr, item) => {
   let l = 0,
     r = arr.length - 1;

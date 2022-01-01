@@ -1,3 +1,5 @@
+// https://www.30secondsofcode.org/articles/s/js-data-structures-doubly-linked-list
+
 class DoublyLinkedList {
   constructor() {
     this.nodes = [];

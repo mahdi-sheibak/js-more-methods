@@ -1,3 +1,5 @@
+// https://www.30secondsofcode.org/articles/s/js-data-structures-queue
+
 class Queue {
   constructor() {
     this.items = [];
